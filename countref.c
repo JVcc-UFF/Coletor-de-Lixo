@@ -45,7 +45,6 @@ void atrib2(void **receptor, void *transmissor){
 }
 
 void at_ListaRef(memoria *componente, int contaR){
-
     componente->contaR += contaR;
     if (componente->contaR == 0){
         if (listaRef->prox != NULL){
@@ -66,7 +65,6 @@ void at_ListaRef(memoria *componente, int contaR){
 }
 
 void limpaLixo(){
-
     memoria *aux=listaRef;
     while (aux!=NULL){
         free(aux->endereco);
