@@ -76,11 +76,10 @@ void limpaLixo(){
 }
 
 void printaReferencia(){
-
     memoria *aux=listaRef;
+    printf("Endereços    ||    Referências\n\n");
     while (aux!=NULL){
-        printf("Endere�o:%d\t",aux->endereco);
-        printf("ref:%d\n",aux->contaR);
+        printf("%d    ||      %d\n",aux->endereco, aux->contaR);
         aux=aux->prox;
     }
 }
