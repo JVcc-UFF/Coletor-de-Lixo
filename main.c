@@ -13,7 +13,9 @@ int main()
     atrib2(&v,w);
     char *c=malloc2(sizeof(char));
     *c='z';
-    atrib2(&w,NULL);
+    //atrib2(&w,NULL);
+    int *p=malloc2(sizeof(int));;
+    atrib2(&v,p);
     printaReferencia();
     limpaLixo();
     return 0;
